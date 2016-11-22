@@ -1,0 +1,19 @@
+<article id="content-wrapper" class="content-wrapper">
+
+  <app-loading *ngIf="loading"></app-loading>
+
+  <section id="content-main" class="content-main clearfix" *ngIf="isLoaded">
+    <h1 class="content-heading">{{pageName}}</h1>
+
+    <div class="form-inline">
+      <div class="form-group">
+        <label for="inputName">Name:</label>
+        <input id="inputName" type="text" [(ngModel)]="name" class="form-control" />
+        <button (click)="alertGreeting(name)" [disabled]="!name" class="btn btn-primary">Greet</button>
+      </div>
+    </div>
+    
+    <div *ngIf="mqview.getIsLarge">Large</div>
+    <div *ngIf="!mqview.getIsLarge">Small</div>
+  </section> 
+</article>
