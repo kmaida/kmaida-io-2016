@@ -1,0 +1,126 @@
+/*--------------------
+	 	FORMS
+--------------------*/
+
+fieldset {
+	border: 1px solid $color-border;
+	border-radius: 3px;
+	padding: 12px 20px 20px;
+}
+legend {
+	font-weight: 700;
+	letter-spacing: 2px;
+	margin-left: -6px;
+	padding: 0 6px;
+	text-transform: uppercase;
+}
+.inputGroup {
+	display: block;
+	margin: 20px 0;
+
+	fieldset &:first-child {
+		margin-top: 0;
+	}
+	fieldset &:last-child {
+		margin-bottom: 0;
+	}
+}
+label {
+	font-weight: 700;
+
+	&.label-block {
+		display: block;
+		margin-bottom: 4px;
+	}
+	&.label-section {
+		margin-bottom: 8px;
+	}
+	&.label-option-wrap {
+		display: inline-block;
+		font-weight: 300;
+		margin: 0 10px 4px 0;
+		vertical-align: middle;
+	}
+	&.label-option-wrap-block {
+		display: block;
+		font-weight: 300;
+		margin-bottom: 4px;
+		vertical-align: middle;
+	}
+}
+
+/*-- Inputs --*/
+
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+	border: 1px solid $color-border;
+	border-radius: 2px;
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.15);
+	color: $color-text;
+	font-size: 16px;	/* for iOS */
+}
+select {
+	background: $color-theme-white;
+	font-weight: 300;
+}
+textarea {
+	min-height: 100px;
+	padding: 6px;
+	width: 100%;
+}
+input[type="text"],
+input[type="number"],
+input[type="password"],
+input[type="email"] {
+	height: 30px;
+	line-height: 1.5em;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	cursor: pointer;
+	vertical-align: top;
+}
+input.ng-dirty.ng-invalid {
+	border-color: $color-invalid-rgba;
+	box-shadow: 0 0 6px $color-invalid-rgba;
+}
+
+/*-- Buttons --*/
+
+.btn {
+	background: $color-bg-gray-light;
+	border-radius: 4px;
+	border: 1px solid $color-border;
+	box-shadow: 0 1px 2px rgba(0,0,0,.15);
+	color: $color-text;
+	font: 300 14px/1 $fontStack-sansSerif;
+	display: inline-block;
+	padding: 8px 12px;
+	transition: all 200ms ease-in-out;
+
+	&:hover {
+		background: $color-theme-dark;
+		border-color: $color-link-hover;
+		color: $color-theme-white;
+		transition: all 200ms ease-in-out;
+	}
+
+	&-action {
+		background: $color-theme-crimson;
+		border: 1px solid $color-theme-crimson;
+		color: $color-theme-white;
+
+		&:hover {
+			background: $color-link-hover;
+			color: $color-theme-white;
+			transition: all 200ms ease-in-out;
+		}
+	}
+	&.ng-disabled {
+		opacity: .5;
+	}
+}

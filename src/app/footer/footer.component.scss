@@ -2,14 +2,9 @@
         FOOTER
 --------------------*/
 
-@import '../../assets/scss/partials/layout.vars';
-@import '../../assets/scss/partials/responsive.partial';
+@import '../../assets/scss/core/partials/layout.vars';
+@import '../../assets/scss/core/partials/responsive.partial';
 
-:host {
-  padding: $padding-screen-small;
+p {
   text-align: center;
-
-  @include mq($large) {
-    padding: $padding-screen-large;
-  }
 }

@@ -2,7 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
 import { HomeComponent } from '../pages/home/home.component';
-import { SubComponent } from '../pages/sub/sub.component';
+import { WorkComponent } from '../pages/work/work.component';
+import { WorkDetailComponent } from '../pages/work-detail/work-detail.component';
 import { Error404Component } from '../pages/error404/error404.component';
 
 @NgModule({
@@ -13,8 +14,12 @@ import { Error404Component } from '../pages/error404/error404.component';
         component: HomeComponent
       },
       {
-        path: 'subpage',
-        component: SubComponent
+        path: 'work',
+        component: WorkComponent
+      },
+      {
+        path: 'work/:slug',
+        component: WorkDetailComponent
       },
       {
         path: '**',

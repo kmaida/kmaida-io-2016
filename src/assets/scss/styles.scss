@@ -1,16 +1,27 @@
 /*
- * ng2-dinos
+ * kmaida.io
  * Author: Kim Maida 
- * Author URI: <http://github.com/kmaida>
- * Source: <https://github.com/kmaida/ng2-dinos>
- * License: MIT
+ * Author URI: <http://kmaida.io>
+ * Source: <https://github.com/kmaida/kmaida-io>
+ * License: MIT Public License
 */
 
-// partials
-@import 'partials/layout.vars';
-@import 'partials/responsive.partial';
+/*-- Core --*/
 
-// global styles
-@import 'base';
-@import 'presentation';
-@import 'layout';
+@import 'core/partials/colors.vars';
+@import 'core/partials/typography.vars';
+@import 'core/partials/layout.vars';
+@import 'core/partials/responsive.partial';
+
+@import 'core/base';
+@import 'core/icons';
+@import 'core/presentation';
+@import 'core/forms';
+@import 'core/layout';
+@import 'core/print';
+
+/*-- Modules --*/
+
+@import 'modules/header';
+@import 'modules/nav';
+@import 'modules/footer';

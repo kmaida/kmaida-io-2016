@@ -1,8 +1,8 @@
 <header id="header" class="header">
-  <div class="header-page bg-primary">
-    <a class="toggle-offcanvas bg-primary" (click)="toggleNav()"><span></span></a>
-    <h1 class="header-page-siteTitle">
-      <a routerLink="/">reStart-angular2</a>
+  <div class="header-mobile-page">
+    <a class="toggle-offcanvas" (click)="toggleNav()"><span></span></a>
+    <h1 class="header-mobile-page-siteTitle">
+      <a routerLink="/">kmaida.io</a>
     </h1>
   </div>
 
@@ -12,10 +12,10 @@
         <a
           routerLink="/"
           routerLinkActive="active"
-          [routerLinkActiveOptions]="{ exact: true }">Home</a>
+          [routerLinkActiveOptions]="{ exact: true }">Hello</a>
       </li>
       <li>
-        <a routerLink="/subpage" routerLinkActive="active">Subpage</a>
+        <a routerLink="/work" routerLinkActive="active">Work</a>
       </li>
     </ul>
   </nav>

@@ -1,0 +1,24 @@
+<article id="content-wrapper" class="content-wrapper">
+  <section id="content-main" class="content-main clearfix">
+    <h1 class="content-heading">{{pageName}}</h1>
+
+    <app-loading *ngIf="loading"></app-loading>
+
+    <ul *ngIf="isLoaded" class="work-list">
+      <li
+        *ngFor="let project of data"
+        id="project_{{project.slug}}"
+        class="work-list-item">
+
+        <h2><a [routerLink]="['/work', project.slug]" [innerHTML]="project.title"></a></h2>
+
+        <a [routerLink]="['/work', project.slug]">
+          <img *ngIf="project.acf.main_image" src="{{project.acf.main_image.sizes.thumbnail}}">
+        </a>
+
+        <div *ngIf="project.acf.date" [innerHTML]="project.acf.date"></div>
+      </li>
+    </ul>
+
+  </section>
+</article>

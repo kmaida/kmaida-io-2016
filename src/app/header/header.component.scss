@@ -2,7 +2,10 @@
        HEADER
 --------------------*/
 
-@import '../../assets/scss/partials/layout.vars';
+@import '../../assets/scss/core/partials/layout.vars';
+@import '../../assets/scss/core/partials/colors.vars';
+@import '../../assets/scss/core/partials/responsive.partial';
+@import '../../assets/scss/core/partials/typography.vars';
 @import 'nav';
 
 .header-page {

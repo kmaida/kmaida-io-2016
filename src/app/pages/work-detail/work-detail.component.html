@@ -1,0 +1,43 @@
+<article id="content-wrapper" class="content-wrapper">
+  <section id="content-main" class="content-main clearfix">
+    <app-loading *ngIf="loading"></app-loading>
+
+    <div *ngIf="isLoaded">
+      <h1 class="content-heading">{{pageName}}</h1>
+
+      <section id="work_{{data.slug}}" class="project">
+        <img
+          *ngIf="data.acf.main_image"
+          class="mainImg"
+          src="{{data.acf.main_image.sizes.large}}" />
+
+        <div *ngIf="data.acf.date">{{data.acf.date}}</div>
+
+        <ul *ngIf="liveUrl || ossUrl" class="urlList">
+          <li *ngIf="liveUrl">
+            <i class="icon icon-world"></i> Live URL: <a href="{{liveUrl}}">{{liveUrl}}</a>
+            <small *ngIf="data.acf.live_url_special_notes">
+              <em>({{data.acf.live_url_special_notes}})</em>
+            </small>
+
+            <li *ngIf="ossUrl">
+              <i class="icon icon-source-code"></i> Open Source: <a href="{{ossUrl}}">{{ossUrl}}</a>
+            </li>
+        </ul>
+
+        <div [innerHTML]="data.content"></div>
+
+        <ul>
+          <li *ngFor="let techItem of data.acf.technologies">{{techItem}}</li>
+        </ul>
+
+        <div *ngIf="data.acf.images && data.acf.images.length">
+          <a *ngFor="let image of data.acf.images" href="{{image.url}}">
+            <img src="{{image.sizes.thumbnail}}" />
+          </a>
+        </div>
+      </section>
+    </div>
+
+  </section> 
+</article>

@@ -1,8 +1,8 @@
 /*--------------------
-     NAVIGATION
+	 NAVIGATION
 --------------------*/
 
-/*---------------------------- Hamburger toggle --*/
+/*------------------------------------------------------------------------- Hamburger menu toggle --*/
 
 .toggle-offcanvas {
 	background: $color-theme-dark;
@@ -38,8 +38,8 @@
 			bottom: -9px;
 		}
 	}
-  :host-context(.nav-open) & {
-    background: $color-theme-crimson;
+	.nav-open & {
+		background: $color-theme-crimson;
 
 		span {
 			background: transparent;
@@ -58,7 +58,7 @@
 	}
 }
 
-/*---------------------------- Navigation --*/
+/*------------------------------------------------------------------------- Navigation --*/
 
 .header .nav {
 	background: $color-theme-dark;

@@ -1,0 +1,42 @@
+/*--------------------
+	COLOR VARIABLES
+--------------------*/
+
+/*-- Color definitions --*/
+
+/* Hex code names from http://name-of-color.com/ */
+
+$color-black: #000;
+$color-white: #fff;
+$color-mineShaft: #333;
+$color-celeste: #ccc;
+$color-gallery: #eee;
+$color-utahCrimson: #D3003F;
+$color-monarch: #8B0723;
+
+/* Color partially defined by opacity */
+
+$color-gray-rgba: rgba(255,255,255,.5);
+$color-red-rgba: rgba(169,68,66,.6);
+
+/*-- Color by theme --*/
+
+$color-theme-white: $color-white;
+$color-theme-crimson: $color-utahCrimson;
+$color-theme-dark: $color-mineShaft;
+
+/*-- Color by function --*/
+
+$color-bg: $color-white;
+$color-bg-gray-light: $color-gallery;
+$color-bg-dark: $color-mineShaft;
+$color-border: $color-celeste;
+$color-border-light: $color-gallery;
+$color-nav-bg: $color-white;
+$color-text: $color-mineShaft;
+$color-link-contrast: $color-white;
+$color-link: $color-utahCrimson;
+$color-link-hover: $color-monarch;
+
+$color-disabled-rgba: $color-gray-rgba;
+$color-invalid-rgba: $color-red-rgba;
