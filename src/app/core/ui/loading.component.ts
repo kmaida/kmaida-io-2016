@@ -6,9 +6,9 @@ import { Component } from '@angular/core';
   styles: [`
     .loading {
       display: block;
-      height: 60px;
+      height: 50px;
       margin: 30px auto;
-      width: 60px;
+      width: 50px;
     }
   `]
 })

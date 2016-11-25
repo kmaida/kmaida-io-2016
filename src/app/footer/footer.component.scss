@@ -5,6 +5,11 @@
 @import '../../assets/scss/core/partials/layout.vars';
 @import '../../assets/scss/core/partials/responsive.partial';
 
-p {
-  text-align: center;
+:host {
+	padding: $padding-screen-small;
+	text-align: center;
+
+	@include mq($mq-large) {
+		padding: $padding-screen-large;
+	}
 }

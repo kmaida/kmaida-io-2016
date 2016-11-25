@@ -9,7 +9,7 @@ body {
 	overflow: hidden;	/* necessary to handle offcanvas scrollbar behavior */
 }
 
-/*------------------------------------------------------------------------- Off-canvas Functionality --*/
+/*---------------------------- Off-canvas Functionality --*/
 
 /*-- Content canvas wrapper --*/
 
@@ -26,7 +26,7 @@ body {
 	transition: transform 250ms ease;
 	transform: translate3d(0,0,0);
 
-	.nav-open & {
+	&.nav-open {
 		transform: translate3d(140px,0,0);
 	}
 }
