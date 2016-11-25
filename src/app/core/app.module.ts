@@ -6,6 +6,8 @@ import { HttpModule } from '@angular/http';
 import { AppRoutingModule } from './app-routing.module';
 import { MediacheckService } from './ui/mediacheck.service';
 import { MqviewService } from './ui/mqview.service';
+import { JSONDataService } from './JSONData.service';
+import { UtilsService } from './utils.service';
 
 import { AppComponent } from './app.component';
 import { LoadingComponent } from './ui/loading.component';
@@ -14,6 +16,8 @@ import { FooterComponent } from '../footer/footer.component';
 
 import { SubComponent } from '../pages/sub/sub.component';
 import { HomeComponent } from '../pages/home/home.component';
+import { LargeComponent } from '../pages/home/large.component';
+import { SmallComponent } from '../pages/home/small.component';
 import { Error404Component } from '../pages/error404/error404.component';
 
 @NgModule({
@@ -24,6 +28,8 @@ import { Error404Component } from '../pages/error404/error404.component';
     LoadingComponent,
     SubComponent,
     HomeComponent,
+    LargeComponent,
+    SmallComponent,
     Error404Component
   ],
   imports: [
@@ -35,7 +41,9 @@ import { Error404Component } from '../pages/error404/error404.component';
   providers: [
     Title,
     MediacheckService,
-    MqviewService
+    MqviewService,
+    JSONDataService,
+    UtilsService
   ],
   bootstrap: [AppComponent]
 })

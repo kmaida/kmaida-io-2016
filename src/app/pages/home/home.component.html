@@ -9,11 +9,23 @@
       <div class="form-group">
         <label for="inputName">Name:</label>
         <input id="inputName" type="text" [(ngModel)]="name" class="form-control" />
-        <button (click)="alertGreeting(name)" [disabled]="!name" class="btn btn-primary">Greet</button>
+        <button (click)="global.alertGreeting(name)" [disabled]="!name" class="btn btn-primary">Greet</button>
       </div>
     </div>
+
+    <h2>{{global.greeting}}, {{name}}!</h2>
+
+    <p [innerHTML]="data.summary"></p>
+
+    <p [innerHTML]="stringOfHTML"></p>
+
+    <h3>View Switching</h3>
+
+    <!-- show if small view -->
+    <restart-small *ngIf="!mqview.getIsLarge" [animals]="data.animals"></restart-small>
     
-    <div *ngIf="mqview.getIsLarge">Large</div>
-    <div *ngIf="!mqview.getIsLarge">Small</div>
+    <!-- show if large view -->
+    <restart-large *ngIf="mqview.getIsLarge" [animals]="data.animals"></restart-large>
+
   </section> 
 </article>

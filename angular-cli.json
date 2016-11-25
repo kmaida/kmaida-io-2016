@@ -15,7 +15,7 @@
       "main": "main.ts",
       "test": "test.ts",
       "tsconfig": "tsconfig.json",
-      "prefix": "app",
+      "prefix": "restart",
       "mobile": false,
       "styles": [
 				"assets/scss/styles.scss"

@@ -5,7 +5,7 @@ import { MediacheckService } from './ui/mediacheck.service';
 import { MqviewService } from './ui/mqview.service';
 
 @Component({
-  selector: 'app-root',
+  selector: 'restart-root',
   templateUrl: './app.component.html'
 })
 export class AppComponent implements OnInit {
