@@ -2,7 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 
 @Component({
-  selector: 'app-sub',
+  selector: 'restart-sub',
   templateUrl: './sub.component.html'
 })
 export class SubComponent implements OnInit {

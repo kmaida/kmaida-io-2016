@@ -15,6 +15,7 @@ import { HeaderComponent } from '../header/header.component';
 import { FooterComponent } from '../footer/footer.component';
 
 import { SubComponent } from '../pages/sub/sub.component';
+import { SampleComponent } from '../pages/sub/sample.component';
 import { HomeComponent } from '../pages/home/home.component';
 import { LargeComponent } from '../pages/home/large.component';
 import { SmallComponent } from '../pages/home/small.component';
@@ -27,6 +28,7 @@ import { Error404Component } from '../pages/error404/error404.component';
     FooterComponent,
     LoadingComponent,
     SubComponent,
+    SampleComponent,
     HomeComponent,
     LargeComponent,
     SmallComponent,

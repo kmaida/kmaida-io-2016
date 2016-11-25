@@ -8,7 +8,7 @@ import { JSONDataService } from '../../core/JSONData.service';
 import { UtilsService } from '../../core/utils.service';
 
 @Component({
-  selector: 'app-home',
+  selector: 'restart-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
 })
