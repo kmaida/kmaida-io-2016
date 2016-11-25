@@ -1,6 +1,6 @@
 # reStart-angular2
 
-This is a spiritual successor to [reStart-angular](https://github.com/kmaida/reStart-angular). This is a responsive (mohbile first) boilerplate single page app in Angular 2(+).
+This is a spiritual successor to [reStart-angular](https://github.com/kmaida/reStart-angular). This is a responsive (mobile first) boilerplate single page app in Angular 2(+).
 
 It includes basic features to get a scalable single page application started.
 
@@ -15,13 +15,12 @@ It includes basic features to get a scalable single page application started.
 
 * responsive features with matchmedia and subscription (see [angular2-mediacheck](https://github.com/kmaida/angular2-mediacheck) for documentation)
 * SCSS (global and components)
-* simple loading states
+* simple loading state
 * sample API HTTP call using observable
-* error handling
 * off-canvas navigation
 * filter service
 * example services and components
-* Bootstrap 4-alpha
+* [Bootstrap 4-alpha](https://v4-alpha.getbootstrap.com/)
 
 ## Dependencies
 
